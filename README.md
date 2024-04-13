@@ -25,7 +25,7 @@
 
 ## Work Done on given requirements:
 * Created a project name TestProject
-* Created a sueperuser
+* Created a sueperuser admin
 * Created 3 modles with given instructions
 * Build views for each model
 * Build form to get the data and validate the data from the user
