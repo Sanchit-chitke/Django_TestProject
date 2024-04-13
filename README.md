@@ -23,6 +23,12 @@
 
 ![image](https://github.com/Sanchit-chitke/Django_TestProject/assets/109956204/99975a42-3fd5-42d2-90b9-a8508662e272)
 
+## Admin pannel View
+
+registed the models created so admin can have look at it in easy way provided by the django.
+
+![image](https://github.com/Sanchit-chitke/Django_TestProject/assets/109956204/1f195bf2-6342-4fe0-b60a-ee2b64661434)
+
 ## Work Done on given requirements:
 * Created a project name TestProject
 * Created a sueperuser admin
@@ -30,10 +36,5 @@
 * Build views for each model
 * Build form to get the data and validate the data from the user
 * Created 5 templates to show the data
+* Added CSS properties to the HTML templates for rendering
 
-
-## Admin pannel View
-
-registed the models created so admin can have look at it in easy way provided by the django.
-
-![image](https://github.com/Sanchit-chitke/Django_TestProject/assets/109956204/1f195bf2-6342-4fe0-b60a-ee2b64661434)
