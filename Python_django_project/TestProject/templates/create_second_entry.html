@@ -1,0 +1,15 @@
+
+{% extends 'base.html' %}
+
+{% block title %}Create Second Entry{% endblock %}
+
+{% block content %}
+<h2>Create Second Entry</h2>
+
+    <form class='entry-container' method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button  class='btn' type="submit">Submit</button>
+    </form>
+
+{% endblock %}

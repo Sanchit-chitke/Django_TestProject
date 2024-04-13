@@ -1,0 +1,12 @@
+<!-- show_third_entry.html -->
+{% extends 'base.html' %}
+
+{% block title %}Show Third Entry{% endblock %}
+
+{% block content %}
+<div class="entry-container">
+    <h3>Third Entry</h3>
+    <p>{{ third_entry | capfirst}}</p>
+    <a href="{% url 'create_first_entry' %}"><button  class='btn'>Home</button></a>
+</div>
+{% endblock %}
