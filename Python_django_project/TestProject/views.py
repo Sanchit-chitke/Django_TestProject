@@ -16,11 +16,11 @@ def create_second_entry(request):
     if request.method == 'POST':
         form = SecondModelForm(request.POST)
         if form.is_valid():
-            first_model_instance = form.cleaned_data['first_model']  # Get the associated FirstModel instance
+            first_model_instance = form.cleaned_data['first_model'] 
             second_model_instance = form.save(commit=False)
-            second_model_instance.first_model = first_model_instance  # Set the first_model foreign key
+            second_model_instance.first_model = first_model_instance 
             second_model_instance.save()
-            return redirect('create_third_entry')  # Redirect to create_third_entry view
+            return redirect('create_third_entry') 
     else:
         form = SecondModelForm()
     return render(request, 'create_second_entry.html', {'form': form})
@@ -29,11 +29,11 @@ def create_third_entry(request):
     if request.method == 'POST':
         form = ThirdModelForm(request.POST)
         if form.is_valid():
-            second_model_instance = form.cleaned_data['second_model']  # Get the associated SecondModel instance
+            second_model_instance = form.cleaned_data['second_model']  
             third_model_instance = form.save(commit=False)
-            third_model_instance.second_model = second_model_instance  # Set the second_model foreign key
+            third_model_instance.second_model = second_model_instance  
             third_model_instance.save()
-            return redirect('show_third_entry')  # Redirect to show_third_entry view
+            return redirect('show_third_entry')  
     else:
         form = ThirdModelForm()
     return render(request, 'create_third_entry.html', {'form': form})
